@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+	<html class="sl-root decks export offline loaded">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="date" content="2018-09-22" scheme="YYYY-MM-DD">
+		<title>Best Practices on Providing Free Support for your Plugin or Theme</title>
+
+		<meta name="description" content="If you are a WordPress plugin or theme author, you probably have mixed feelings about the WordPress Support Forums. For many, they are a necessary evil of the WordPress product developer experience. While they are limited, the advantages they offer far outweigh the disadvantages when tackled well.  I’ve been providing support on the WP.org support forums for over 5 years for a wide variety of plugins. I’ll share my experiences and provide insight and tools that will make you a believer both in free support and in the value the .org support forums can provide to you and your business.  Attendees will gain a deeper knowledge of all the resources the WP.org Support Forums offer. They will also learn of new tools at their disposal to offer more effective technical support for their users on the .org forums.">
+
+		<link rel="stylesheet" type="text/css" href="lib/offline-v2.css">
+
+
+
+	</head>
+	<body class="reveal-viewport theme-font-montserrat theme-color-grey-blue">
+		<div class="reveal">
+			<div class="slides">
+				<section class="stack" data-id="1aa5d79f2ec1438acaaf7d8a7c067620"><section data-id="6243b059ae1432bcf0541c1617533b87" data-background-color="#383838">
+
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 1280px; left: 0px; top: 533px;" data-block-id="f5b4940c3d7dd9add68d7883a5e8ce43"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(51, 180, 206);" dir="ui" data-gramm_id="10841159-d18f-a2e3-289e-6936e731a30f" data-gramm="true" data-gramm_editor="true">
+<p><a href="https://slides.com/mattcromwell/wcsd-2018" target="_blank">slides.com/mattcromwell/wclax18</a></p>
+</div></div>
+
+
+<div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 274px;" data-block-id="a04e1a78e54edc1a47fbee49cd52b4d7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;" dir="ui">
+<h3><strong><em>Best Practices on Providing Free Support<br>
+for your Plugin or Theme</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 349px;" data-block-id="596facf99396582b0c5fdd4f4d29509b"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 134px; left: 216px; top: 256px;" data-block-id="d6df1c795ab526d627c97493b9f67ec9"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 133"><rect width="1064" height="133" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 240px; top: 399px;" data-block-id="579792b0ec326c25d76aaeb229eb1acc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; text-align: center; line-height: 0.858;" dir="ui" data-has-line-height="">
+<p style="text-align:left"><span style="font-size:21px">WordCamp Los Angeles 2018</span></p>
+
+<p style="text-align:left"><span style="font-size:21px">Presented by: Matt Cromwell</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 211.111px; height: 95px; left: 671px; top: 97px;" data-block-id="67ee12c4d4a3eb00cf910f72139721fa"><div class="sl-block-content" style="z-index: 16;"><img data-natural-width="1600" data-natural-height="720" data-lazy-loaded="" data-src="wclax18/4f2af573af6b5fcf7b0f1f2fcbf10cbc.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 199px; top: 572px;" data-block-id="59c6ada9084bf5deb9b56ae6029c6e42"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: center;" dir="ui">
+<p><span style="font-size:21px">@learnwithmattc</span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 21px; height: 21px; left: 402px; top: 584px;" data-block-id="88cb2a6a6f67f67dee393459187a6d4e"><div class="sl-block-content" data-shape-type="symbol-twitter" data-shape-fill-color="rgb(153, 210, 246)" data-shape-stretch="true" style="z-index: 18;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 3 32 26"><g class="shape-element" fill="rgb(153, 210, 246)"><path d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 193px; height: 63px; left: 398px; top: 113px;" data-block-id="285dd64e7eae29bf732e38d53bed2b3f"><div class="sl-block-content" style="z-index: 19;"><img style="" data-natural-width="1185" data-natural-height="387" data-lazy-loaded="" data-src="wclax18/b8aee1e537651121485b259fa4e5ac69.png"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 217px; height: 217px; left: 2px; top: 256px;" data-block-id="b771bec96e18b0f579ed7d4c3403b5d0"><div class="sl-block-content" style="z-index: 20;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div></section><section data-background-color="#383838" data-id="1f0007f74d25f5e56dddaa0049b87057"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="dd4813a140713e57009bf9f61eb4e0e9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>What are we here for?</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="3b37bc8fa2669a7a61d86ff277a36367"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">The Outline</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="aa2ff2b34063e5be20e0ff677ab1c63a"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="c284cf3005a32c7cf875c8e537c6eb68"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="7ead18ab1027424dd4deac8de697edb6"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="49e2967a4c3d6f70b54cec645400d02c" style="height: auto; min-width: 30px; min-height: 30px; width: 983px; left: 0px; top: 72px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<ul>
+	<li>
+	<p><span style="font-size:1.4em">Getting to Know the Forums</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">Rules of the Forums</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">Monitoring Your Threads</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">User Roles</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">Tips and Tricks</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">C.R.E.W. -- the Tone Guide</span></p>
+	</li>
+</ul>
+</div></div></section><section data-background-color="#383838" data-id="b72491b1e0035dced37de424dab4ff19"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="2c6731ef581258a2fdf72312dc0fd6d7"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;" dir="ui">
+<h3><strong><em>Getting to know the</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="8ab46eb2d235457f51a4eba48c68d75a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">WP Support Forums</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="c7b7b977617f3ce446ada34966bc7b8a"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="7c89b99fa217a2f36d532d7355fe2d06"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 217px; height: 217px; left: 0px; top: 503px;" data-block-id="fc23f3455b9856c6c5739849649f6f57"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="9597a8bdccf8bba6726b81327be1dcff" style="min-width: 4px; min-height: 4px; width: 1075px; height: 717px; left: 102px; top: 2px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1792" data-natural-height="1196" data-lazy-loaded="" data-src="wclax18/127bf4066905f0a67e0159c5fa00e459.png"></div></div></section><section data-background-color="#383838" data-id="243a00c32f20224806a8ca31a4fc0b30"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="352aa29d0313fe195e89319d154e3004"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;" dir="ui">
+<h3><strong><em>Getting to know the</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="d90d9bb018ad1d1bcffd646db4552842"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">WP Support Forums</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="0b2db85b7b5ef572285589d8fc679cdc"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="b9a2a066728310a6d654c863922a1e6f"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="d72344c85337b08e6860edb8103dfcf2"><div class="sl-block-content" style="z-index: 16;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 560px; left: 40px; top: 237px;" data-block-id="37e20a6a2f6b40758e9c147e2e982b20"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17;">
+<ul>
+	<li style="">
+	<p style="font-size:42px">A Forum for every aspect of WP</p>
+	</li>
+	<li style="">
+	<p style="font-size:42px">Also Plugins</p>
+	</li>
+	<li style="">
+	<p style="font-size:42px">Also Themes</p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="2131c61e7b0f4609cf9eea31301562b3" style="min-width: 4px; min-height: 4px; width: 679px; height: 511px; left: 601px; top: 0px;"><div class="sl-block-content fragment current-visible" style="z-index: 11;" data-fragment-index="0"><img style="" data-natural-width="1467" data-natural-height="1104" data-src="wclax18/dffe3fb406868da27ffd730533956e90.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="28971539c12cd7d3be04a0c788c7e9e2" style="height: auto; min-width: 30px; min-height: 30px; width: 521px; left: 80px; top: 25px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; text-align: left; color: rgb(51, 180, 206);">
+<h1><span style="text-align:left">Navigating the Forums</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="7d7171d328aee9d7106b521bf0bf4c65" style="min-width: 4px; min-height: 4px; width: 341px; height: 503px; left: 770px; top: 1px;"><div class="sl-block-content fragment" style="z-index: 19;" data-fragment-index="1"><img style="" data-natural-width="915" data-natural-height="1350" data-src="wclax18/0dbe335ddfd43b59f607ae1544f771ed.png"></div></div></section><section data-background-color="#383838" data-id="4029ae455f836b024e2e937f7d3292b5"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="212f8489bdb5cbb138f05a3971d2f92a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 10; text-align: left;" dir="ui">
+<h3><strong><em>Getting to know the</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="e2789306dd36ab4838d2775b98eed534"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 11; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">WP Support Forums</span></h1>
+</div></div>
+
+
+
+
+
+<div class="sl-block" data-block-type="image" data-block-id="88aa2c2db88e705f46f1b12e7aa703a7" style="min-width: 4px; min-height: 4px; width: 963px; height: 720px; left: 159px; top: 0px;"><div class="sl-block-content" style="z-index: 12;"><img data-natural-width="1439" data-natural-height="1076" style="" data-src="wclax18/1cab3fd1a75646654be72016eaf0d3bc.png"></div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="edc5fb7149173d43b2b413598a92a5a4" style="min-width: 4px; min-height: 4px; width: 276px; height: 53px; left: 159px; top: 150px;"><div class="sl-block-style" style="z-index: 13; opacity: 0.36;"><div class="sl-block-content fragment current-visible" data-shape-type="rect" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 13;" data-fragment-index="0"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 276 53"><rect width="276" height="53" class="shape-element" fill="rgb(241, 194, 50)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 624px; height: 53px; left: 160px; top: 209px;" data-block-id="6e670f312b323e43400f9e925e865d26"><div class="sl-block-style" style="z-index: 15; opacity: 0.36;"><div class="sl-block-content fragment current-visible" data-shape-type="rect" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 15;" data-fragment-index="1"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 624 53"><rect width="624" height="53" class="shape-element" fill="rgb(241, 194, 50)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 631px; height: 173px; left: 160px; top: 387px;" data-block-id="3fb075f2ee95411ce34fb8793619c4d7"><div class="sl-block-style" style="z-index: 16; opacity: 0.36;"><div class="sl-block-content fragment current-visible" data-shape-type="rect" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 16;" data-fragment-index="2"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 631 173"><rect width="631" height="173" class="shape-element" fill="rgb(241, 194, 50)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 266px; height: 44px; left: 814px; top: 560px;" data-block-id="f7b12df3c2b4c5f45bf08f996181f2e9"><div class="sl-block-style" style="z-index: 17; opacity: 0.36;"><div class="sl-block-content fragment current-visible" data-shape-type="rect" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 17;" data-fragment-index="3"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 266 44"><rect width="266" height="44" class="shape-element" fill="rgb(241, 194, 50)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 266px; height: 53px; left: 814px; top: 604px;" data-block-id="61852376f8fa0ae8493c1c2c02c96bb1"><div class="sl-block-style" style="z-index: 18; opacity: 0.36;"><div class="sl-block-content fragment current-visible" data-shape-type="rect" data-shape-fill-color="rgb(241, 194, 50)" data-shape-stretch="true" style="z-index: 18;" data-fragment-index="4"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 266 53"><rect width="266" height="53" class="shape-element" fill="rgb(241, 194, 50)"></rect></svg></div></div></div></section><section data-background-color="#383838" data-id="1eb485e98f1ee8b24848a89f415447c2"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="1cad7098edc8a2dc703f8870f18f9350"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>Getting to know the</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="c01951b8e3aff59259ea3a882dd58960"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Forum Rules</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="d20ab3379b0f88b9f5960a860a40f938"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="6cc745cbc01d85062c509926e7cb4b87"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="a72d623e55c84b242398ec21d9772520"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1075px; height: 717px; left: 103px; top: 2px;" data-block-id="b3a0bc7be195fa1521a825c6f24bdfae"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1792" data-natural-height="1196" data-src="wclax18/96bb17b0c3116873971b6fa929200ef7.png"></div></div></section><section data-background-color="#383838" data-id="71c011d2b366e02fc2d358dd4c021d10"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="1f4e37ccccf6e9728187037b9ce93ccc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>Getting to Know the</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="977a93a94f124247312558322a59979a"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Forum Rules</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="eeab1263f13612a7979dc43603a2eb87"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="3c026de48d20f2a9abd8f7eeaa62d1bc"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="9777e59cea448b0be98a4b6f3357b38a"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 983px; left: 193px; top: 100px;" data-block-id="fd794d5a6ca74da09fa06e3ee0686b42"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; line-height: 1.144;" data-has-line-height="">
+<ul>
+	<li>
+	<p style="font-size:42px"><span style="font-size:0.9em">Do not post sensitive information</span></p>
+	</li>
+	<li>
+	<p style="font-size:42px"><span style="font-size:0.9em">Do not post test credentials to a live site</span></p>
+	</li>
+	<li>
+	<p style="font-size:42px"><span style="font-size:0.9em">Never offer to login to a users site...ever.</span></p>
+	</li>
+	<li>
+	<p style="font-size:42px"><span style="font-size:0.9em">Don't provide support for your Pro version</span></p>
+	</li>
+	<li>
+	<p style="font-size:42px"><span style="font-size:0.9em">Don't drop affiliate links</span></p>
+	</li>
+	<li>
+	<p style="font-size:42px"><span style="font-size:0.9em">Don't at-mention moderators, instead, use the "modlook" tag</span></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="83dd48c8dd298960c8af07d2369bb070" style="height: auto; min-width: 30px; min-height: 30px; width: 1280px; left: 0px; top: 18px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; background-color: rgb(51, 180, 206); padding: 11px;">
+<p><a href="https://wordpress.org/support/guidelines/" target="_blank"><span style="color:#FFFFFF">https://wordpress.org/support/guidelines/</span></a></p>
+</div></div></section><section data-background-color="#383838" data-id="6a48f7a78c5b1ada71125acf49c530c4"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="2c799c313c5dba127716c9ccc6a9d3e5"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>All the Ways to </em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="7b8e82567a87c7c9dc65cdfe3c047377"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Monitor Your Threads</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="de89f01571fc9b9d33f76222a38e7275"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="90497723c1d224af862d8227331820e3"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="c4116844151c7e92f0ecf576a6404fb6"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1032px; height: 689px; left: 124.5px; top: 30px;" data-block-id="c9afdff3ff55ea704663167498e96782"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1792" data-natural-height="1196" data-src="wclax18/1acf1769182fe417b2e8209c1030a92e.png"></div></div></section><section data-background-color="#383838" data-id="98e9e70d96781e58a90b0ce2597baa82"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="172e6e93bb4b5321ba8678e998de858c"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>All the Ways to </em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="c17f19ca4cfe1b91dd14e67f4054d900"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Monitor Your Threads</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="7c22d241ee1f0277515a4c11bc58ae20"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="bc4fc9669943b51c9a7dcc586ac7b2e2"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="8994d0d02e013c11fea29b3383de2d6b"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 983px; left: 137px; top: 236px;" data-block-id="8dff111839b3548902fd05bd912c8dba"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16;">
+<ul>
+	<li>
+	<p><span style="font-size:1.4em">Authors, Contributors are auto-subscribed</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">Otherwise, click that button</span></p>
+	</li>
+	<li>
+	<p><span style="font-size:1.4em">RSS Feed:</span></p>
+	</li>
+</ul>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="00bf8937090e707c1c1b6c3102d92647" style="height: auto; min-width: 30px; min-height: 30px; width: 1280px; left: 0px; top: 50px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(51, 180, 206);">
+<h1>What the Forum Provides</h1>
+</div></div>
+<div class="sl-block" data-block-type="text" data-block-id="7e36c31024503cc651defdbd861046f5" style="height: auto; min-width: 30px; min-height: 30px; width: 819px; left: 373px; top: 370px;"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 18; color: rgb(51, 180, 206);">
+<p><span style="text-align:left">wordpress.org/support/plugin/{plugin-slug}/feed</span></p>
+</div></div></section><section data-background-color="#383838" data-id="7001dc1c894810109ea32fb3ec86e19d"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="7842f155e95aea913ef3b20292a08ab4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>How to </em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="58efeae7068bfb451cb0a16eb142fae4"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Leverage User Roles</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="11f60e919e21acadf446555e9e0a2d8d"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="fbfe99b26aa1ef70108afe34922c8cb4"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="701619ae5b33ba089b1f1ee1dfc92173"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 1075px; height: 717px; left: 103px; top: 2px;" data-block-id="ad61d4586ee4f942f5ad47066e9b7e2f"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1792" data-natural-height="1196" data-src="wclax18/f647f570b6b738ec8fc3d37aee559a1e.png"></div></div></section><section data-background-color="#383838" data-id="41973e9b4a7678549c1d0ebeeeb745b9"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="a488e3a5f78bfaf7579067f7790ad621"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;" dir="ui">
+<h3><strong><em>How to</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="3f147bd8bea5dbaf8c7ca48f87620f6e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Leverage User Roles</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="68f868f061f41489b7ad26d2593fa34b"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="96a30b688b0b0628408530a0ba684a51"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="e417613dfb73541bed874cad7b2d604a"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c1ff52bd44d8a0c1c5620d30267e80a1" style="min-width: 4px; min-height: 4px; width: 819px; height: 388px; left: 231px; top: 86px;"><div class="sl-block-content fragment current-visible" style="z-index: 15;" data-fragment-index="0"><img data-natural-width="1540" data-natural-height="730" style="" data-src="wclax18/80e1a8df9821e4dc2c41a55cc97022ce.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="b6b72cfc08db6f6e285d9836f95b3e2d" style="min-width: 4px; min-height: 4px; width: 837px; height: 387px; left: 223px; top: 92px;"><div class="sl-block-content fragment current-visible" style="z-index: 16;" data-fragment-index="2"><img data-natural-width="1759" data-natural-height="813" style="" data-src="wclax18/05586e79f95ac137b83c58651ed0274c.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="a6c75eb5233d9637948b837303f1bf2e" style="min-width: 4px; min-height: 4px; width: 924px; height: 399px; left: 179px; top: 86px;"><div class="sl-block-content fragment current-visible" style="z-index: 18;" data-fragment-index="1"><img style="" data-natural-width="1969" data-natural-height="850" data-src="wclax18/bc9a6c64b7326fbe17bd364dc657410e.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 1280px; left: 0px; top: 0px;" data-block-id="161a6c4cc97c01e8cee10f4e34d438fc"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; color: rgb(51, 180, 206); font-size: 84%;">
+<h1>Types of User Roles</h1>
+</div></div></section><section data-background-color="#383838" data-id="828b1e16fe991ea4e47a897ed052e862"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="dbda4c221c6b89bb8e1db5c8349d110f"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>How to</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="a70856518be3034c497bfc13243a4c1b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">Leverage User Roles</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="fbc61a4784e31e24968a3df2f3931801"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="4cb8fc24ab88044adde63670aefe3f39"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="d0a7afe3302d07adfc2a4c2bffb2eb2d"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1280px; left: 0px; top: 22px;" data-block-id="d125f5d74cdb64dec06e0efe6ff3b9a0"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(51, 180, 206); font-size: 84%;">
+<h1>How to Add Plugin Support Roles</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="6df86003d12ed6e884d7a73306dd8531" style="min-width: 4px; min-height: 4px; width: 727px; height: 358px; left: 277px; top: 124px;"><div class="sl-block-content fragment current-visible" style="z-index: 17;" data-fragment-index="0"><img style="" data-natural-width="1476" data-natural-height="727" data-src="wclax18/b7f7533168b58e3f6eaeecfdd93e2d8b.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="c4be09a742f2c15afdf0f0a26addc3f8" style="min-width: 4px; min-height: 4px; width: 315px; height: 379px; left: 483px; top: 114px;"><div class="sl-block-content fragment current-visible" style="z-index: 18;" data-fragment-index="1"><img data-natural-width="912" data-natural-height="1099" style="" data-src="wclax18/d477a4cd95574488951e64d1460fc700.png"></div></div></section><section data-background-color="#383838" data-id="e6295f7f7528034a6f7a207471acc849">
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="3545f968c23d04ed5dc9c3e2aafffb09"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="3f74195b86153e7157bf59d4f51116b4"><div class="sl-block-style" style="z-index: 14;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 14;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="5a5eda11d38067559a6dc4323b85e99a"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="36c02d86d34ff7cde01645c9dcd3e17c" style="min-width: 4px; min-height: 4px; width: 506px; height: 506px; left: 387px; top: 1px;"><div class="sl-block-content" style="z-index: 12;"><img style="" data-natural-width="626" data-natural-height="626" data-src="wclax18/e139a19ac9df03161b6277f881f57050.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="dd7a24be60c58479f9db5c7d47e60f29"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; text-align: left;" dir="ui">
+<h3><strong><em>Going Beyond What the Forum Supplies</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="afac7a34acb30dbde18af58fa93d8005"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">With Tips &amp; Tricks</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" data-block-id="63ab2de63a69d774c0bcb76a723a5101" style="min-width: 4px; min-height: 4px; width: 803px; height: 503px; left: 237px; top: 1px;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="#000000" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 803 503"><rect width="803" height="503" class="shape-element" fill="#000000"></rect></svg></div></div></section><section data-background-color="#383838" data-id="3602fddcf1f3c2cdce2afac75d6fc375"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="c6b7c63df39b85998ea9170f9f60f990"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>Going Beyond What the Forum Supplies</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="d261135ae24dd9aed26deb6fc6a97ac8"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">With Tips &amp; Tricks</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="4bcfef0df742c072d70d954e5162469b"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="c14771485b5306e93cb81e4ef002fb42"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="cd305a8c3aedb6f374e134d57257e25d"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1280px; left: 0px; top: 2px;" data-block-id="e8834613b97ea69cbf94c51b6f655496"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; color: rgb(51, 180, 206);">
+<h1>Gmail Filter</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="be340786ca6df7f1d57bff652e21fc98" style="min-width: 4px; min-height: 4px; width: 919px; height: 398px; left: 181px; top: 116px;"><div class="sl-block-content" style="z-index: 10;"><img data-natural-width="1468" data-natural-height="636" style="" data-src="wclax18/f9881dcf8790be5e4aa0531de710d5b1.png"></div></div></section><section data-background-color="#383838" data-id="fb1db5f2901ae5f1bb0a430d55a30f81"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="88fda0b44848a1e3f7a87915b6dc54be"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>Going Beyond What the Forum Supplies</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="baba2bf5bc8524035cdab242fe57fa21"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">With Tips &amp; Tricks</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="69c9e4826edaba1fd6b0a94bd72e7eca"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="1b8b5601ca97664f5a1d9e4d7e81d5d5"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="2f6f1fd57a0198eeec4fc123552bb4c7"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 587px; left: 0px; top: 216px;" data-block-id="c684566eab8ca537dc3618b4f149a235"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(51, 180, 206);">
+<h1>RSS --&gt; Slack</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="34137125183eee664c7083d1b29f5244" style="min-width: 4px; min-height: 4px; width: 693px; height: 599px; left: 587px; top: 2px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1562" data-natural-height="1350" data-src="wclax18/207348623fc376993e3769c87122fe39.png"></div></div></section><section data-background-color="#383838" data-id="5744b4b3e325dfaffc78bc09e9fa9929"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="36d4e2dbd6d1ec82cfa276cf365ecd4d"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>Going Beyond What the Forum Supplies</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="7c75612f024978a545fe8e637978ef31"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">With Tips &amp; Tricks</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="518fff7f829b85026a7df62805adbe6d"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="0c5f598f32d1eb8f7603bf4e8596e23e"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="b4f60a2cb94d345c9b31ad76ac1a42fc"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1280px; left: 0px; top: 0px;" data-block-id="d35cf32b99af287b9f7f9764cc68156e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(51, 180, 206); font-size: 78%;">
+<h1>Prevent Duplicate Replies (<a href="https://gist.github.com/mathetos/c8f056e62918720890cc5373a6648836" target="_blank">link</a>)</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="f020fa824a1ef6e7ecdfb91eb1397da8" style="min-width: 4px; min-height: 4px; width: 1075px; height: 570px; left: 103px; top: 76px;"><div class="sl-block-content" style="z-index: 10;"><img style="" data-natural-width="1105" data-natural-height="586" data-src="wclax18/eed55e948be257c8ccd995087e8b1784.png"></div></div></section><section data-background-color="#383838" data-id="71eaf0b43cb2db8d6ffcc654a7add684"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="acae88a6aedaecfef26d27c8838585ca"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; text-align: left;" dir="ui">
+<h3><strong><em>Going Beyond What the Forum Supplies</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="e82ed950c576cb1b6a9c6485d60f6ac6"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">With Tips &amp; Tricks</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="d1ca06bf299652b3a4e3dbd827d89063"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="2fbfc07b553cd88b8d89ca3ed73cee0b"><div class="sl-block-style" style="z-index: 12;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 12;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="e23ad6ac0444cfc0b0e15b283c6048c2"><div class="sl-block-content" style="z-index: 15;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1280px; left: 0px; top: 0px;" data-block-id="563c0cd8edebf89ecd7b2e639e772505"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 16; color: rgb(51, 180, 206); font-size: 78%;">
+<h1>Rich Content in your Replies</h1>
+</div></div>
+<div class="sl-block" data-block-type="image" data-block-id="8b3529110c37e4e38b0ee0c3d8c353b2" style="min-width: 4px; min-height: 4px; width: 492px; height: 350px; left: 44px; top: 93px;"><div class="sl-block-content fragment" style="z-index: 17;" data-fragment-index="0"><img data-natural-width="1031" data-natural-height="734" style="" data-src="wclax18/bde4b0efb824ef2cb3421df8076db053.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="ebfcf09f72c8dd30458accc778ee9570" style="min-width: 4px; min-height: 4px; width: 486px; height: 337px; left: 160px; top: 144px;"><div class="sl-block-content fragment" style="z-index: 18;" data-fragment-index="1"><img style="" data-natural-width="970" data-natural-height="673" data-src="wclax18/0e523f5f1932cfc3ae40738d0c06078e.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="60528a4b3c6cc3a3f3a19e1ef76dfb79" style="min-width: 4px; min-height: 4px; width: 583px; height: 294px; left: 297px; top: 83px;"><div class="sl-block-content fragment" style="z-index: 19;" data-fragment-index="2"><img data-natural-width="982" data-natural-height="494" style="" data-src="wclax18/3a5d6e996c681d7e4550fb59506198c4.png"></div></div>
+<div class="sl-block" data-block-type="image" data-block-id="df1d53015a47513d62c1cbac6e92fc7e" style="min-width: 4px; min-height: 4px; width: 579px; height: 312px; left: 381px; top: 157px;"><div class="sl-block-content fragment" style="z-index: 20;" data-fragment-index="3"><img style="" data-natural-width="979" data-natural-height="527" data-src="wclax18/62d2389d1a8aea2363959fba252daad6.png"></div></div>
+<div class="sl-block" data-block-type="text" data-block-id="42d9d2cf49019b10042117f0e6bf2b27" style="height: auto; min-width: 30px; min-height: 30px; width: 278px; left: 995px; top: 114px;"><div class="sl-block-content fragment" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 21;" data-fragment-index="4">
+<ul>
+	<li style="">Slideshare (Slides)</li>
+	<li style="">Vimeo &amp; Youtube (Video)</li>
+	<li style="">Soundcloud (Audio)</li>
+	<li style="">Cloudup (Images)</li>
+</ul>
+</div></div></section><section data-background-color="#383838" data-id="50cd28ac32cd2682772cb52c0ce41f86"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 526px;" data-block-id="10a225a8bd7279903e91a4baf9de718e"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 12; text-align: left;" dir="ui">
+<h3><strong><em>Your Tone Guide:</em></strong></h3>
+</div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1002px; left: 240px; top: 612px;" data-block-id="85dcbfd6e982b1e6a83a767ac3511355"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 13; color: rgb(255, 255, 255); text-align: left;">
+<h1><span style="font-size:1.0em">C.R.E.W.</span></h1>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 598px;" data-block-id="d29e93e179b526524f73eefb6fcd5d63"><div class="sl-block-style" style="z-index: 10;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 10;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 94px; left: 216px; top: 504px;" data-block-id="f26373ef91d54a668cb380e236d3961c"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 94"><rect width="1064" height="94" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+
+<div class="sl-block" data-block-type="image" style="width: 217px; height: 217px; left: 0px; top: 503px; min-width: 4px; min-height: 4px;" data-block-id="f12899414f56b14acdfc85e14a295845"><div class="sl-block-content" style="z-index: 14;"><img style="" data-natural-width="300" data-natural-height="300" data-lazy-loaded="" data-src="wclax18/1ce91f0f38233866d2f2299733b34604.jpg"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; width: 1280px; left: 0px; top: 129px;" data-block-id="48ee555fa8a7e8e277bd847a9bcc30b9"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 15; font-size: 171%;">
+<ul>
+	<li style="" class="fragment" data-fragment-index="0">
+	<p style="color:inherit"><span class="_2he8v2h"><span><span><strong>C</strong></span><span>onfident, not Apologetic</span></span></span></p>
+	</li>
+	<li style="" class="fragment" data-fragment-index="1">
+	<p style="color:inherit"><span class="_2he8v2h"><span><span><strong>R</strong></span><span>esults Oriented, not Argumentative</span></span></span></p>
+	</li>
+	<li style="" class="fragment" data-fragment-index="2">
+	<p style="color:inherit"><span class="_2he8v2h"><span><span><strong>E</strong></span><span>ducational, not Haughty or Overly Technical</span></span></span></p>
+	</li>
+	<li style="" class="fragment" data-fragment-index="3">
+	<p style="color:inherit"><span class="_2he8v2h"><span><span><strong>W</strong></span><span>elcoming, not Thankful</span></span></span></p>
+	</li>
+</ul>
+</div></div></section><section data-background-color="#383838" data-id="568ab68d33503aa1317951c488b8a940"><div class="sl-block" data-block-type="text" style="height: auto; width: 989px; left: 240px; top: 274px;" data-block-id="21a324c33754106c9305f3219073712b"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 14; text-align: left;" dir="ui">
+<h3><strong><em>Matt Cromwell</em></strong></h3>
+</div></div>
+
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 122px; left: 216px; top: 351px;" data-block-id="b50091bcf6721a5e413a00959c449b02"><div class="sl-block-style" style="z-index: 11;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(102, 102, 102)" data-shape-stretch="true" style="z-index: 11;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 122"><rect width="1064" height="122" class="shape-element" fill="rgb(102, 102, 102)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="shape" style="width: 1064px; height: 138px; left: 216px; top: 252px;" data-block-id="4daaa8e741c2c7067009a48e97d941c2"><div class="sl-block-style" style="z-index: 13;"><div class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgb(0, 0, 0)" data-shape-stretch="true" style="z-index: 13;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 0 1064 138"><rect width="1064" height="138" class="shape-element" fill="rgb(0, 0, 0)"></rect></svg></div></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 226px; height: 221px; left: 0.5px; top: 252px;" data-block-id="44d29d436dc8fa85282ce37bdf59c523"><div class="sl-block-content" style="z-index: 16;"><img data-natural-width="460" data-natural-height="450" data-lazy-loaded="" data-src="wclax18/9192af94add1dd10fd8ea7d5654cd6c0.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 240px; top: 398px;" data-block-id="c5ccdc18119f4229c9cccba2ddc647ad"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 17; text-align: center; line-height: 0.858;" dir="ui" data-has-line-height="">
+<p style="text-align:left"><span style="font-size:0.7em">Head of Support at GiveWP.com</span>​</p>
+
+<p style="text-align:left"><span style="font-size:0.7em">Community Consultant for Media Temple</span></p>
+</div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 211.111px; height: 95px; left: 960px; top: 277px;" data-block-id="8f2c8606ef895a55525052592cd7c1ea"><div class="sl-block-content" style="z-index: 18;"><img data-natural-width="1600" data-natural-height="720" data-lazy-loaded="" data-src="wclax18/4f2af573af6b5fcf7b0f1f2fcbf10cbc.png"></div></div>
+<div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 42px; top: 329px;" data-block-id="c31481f2c1e9874d4ef9653456e22e32"><div class="sl-block-content" data-placeholder-tag="p" data-placeholder-text="Text" style="z-index: 19; text-align: center;" dir="ui">
+<p><span style="font-size:21px">@learnwithmattc</span></p>
+</div></div>
+<div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 21px; height: 21px; left: 245px; top: 341px;" data-block-id="95a8a6fd057f12df57c76231ad5f0510"><div class="sl-block-content" data-shape-type="symbol-twitter" data-shape-fill-color="rgb(153, 210, 246)" data-shape-stretch="true" style="z-index: 20;"><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveaspectratio="none" viewbox="0 3 32 26"><g class="shape-element" fill="rgb(153, 210, 246)"><path d="M32 6.076c-1.177 0.522-2.443 0.875-3.771 1.034 1.355-0.813 2.396-2.099 2.887-3.632-1.269 0.752-2.674 1.299-4.169 1.593-1.198-1.276-2.904-2.073-4.792-2.073-3.626 0-6.565 2.939-6.565 6.565 0 0.515 0.058 1.016 0.17 1.496-5.456-0.274-10.294-2.888-13.532-6.86-0.565 0.97-0.889 2.097-0.889 3.301 0 2.278 1.159 4.287 2.921 5.465-1.076-0.034-2.088-0.329-2.974-0.821-0.001 0.027-0.001 0.055-0.001 0.083 0 3.181 2.263 5.834 5.266 6.437-0.551 0.15-1.131 0.23-1.73 0.23-0.423 0-0.834-0.041-1.235-0.118 0.835 2.608 3.26 4.506 6.133 4.559-2.247 1.761-5.078 2.81-8.154 2.81-0.53 0-1.052-0.031-1.566-0.092 2.905 1.863 6.356 2.95 10.064 2.95 12.076 0 18.679-10.004 18.679-18.68 0-0.285-0.006-0.568-0.019-0.849 1.283-0.926 2.396-2.082 3.276-3.398z"></path></g></svg></div></div>
+<div class="sl-block" data-block-type="image" style="min-width: 4px; min-height: 4px; width: 193px; height: 63px; left: 640px; top: 293px;" data-block-id="a94d7b955fbef29e828e709f3f347054"><div class="sl-block-content" style="z-index: 21;"><img style="" data-natural-width="1185" data-natural-height="387" data-lazy-loaded="" data-src="wclax18/b8aee1e537651121485b259fa4e5ac69.png"></div></div></section></section>
+			</div>
+		</div>
+
+		<script>
+			var SLConfig = {"deck": {"id":1331392,"slug":"wclax18","title":"Best Practices on Providing Free Support for your Plugin or Theme","description":"If you are a WordPress plugin or theme author, you probably have mixed feelings about the WordPress Support Forums. For many, they are a necessary evil of the WordPress product developer experience. While they are limited, the advantages they offer far outweigh the disadvantages when tackled well.  I’ve been providing support on the WP.org support forums for over 5 years for a wide variety of plugins. I’ll share my experiences and provide insight and tools that will make you a believer both in free support and in the value the .org support forums can provide to you and your business.  Attendees will gain a deeper knowledge of all the resources the WP.org Support Forums offer. They will also learn of new tools at their disposal to offer more effective technical support for their users on the .org forums.","width":1280,"height":720,"visibility":"all","published_at":"2018-09-21T06:10:11.914Z","sanitize_messages":null,"thumbnail_url":"https://s3.amazonaws.com/media-p.slid.es/thumbnails/e01a46e013bec71639febbfb3a306e0d/thumb.jpg?1537505335","view_count":2,"user":{"id":66335,"username":"mattcromwell","name":"Matt Cromwell","description":"Matt Cromwell is Head of Support and Community Outreach at WordImpress. He's also: Admin of Advanced WordPress Facebook Group; Lead Organizer of the AWP San Diego Meetup; blogs at wordimpress.com, givewp.com, and mattcromwell.com.","thumbnail_url":"//graph.facebook.com/1187242815/picture?type=large","paid":true,"pro":false,"lite":true,"team_id":null,"settings":{"id":6018,"present_controls":true,"present_upsizing":true,"present_pointer":true,"present_notes":true,"default_deck_tag_id":null}},"background_transition":"none","transition":"fade","theme_id":null,"theme_font":"montserrat","theme_color":"grey-blue","auto_slide_interval":0,"comments_enabled":true,"forking_enabled":false,"rolling_links":false,"center":false,"shuffle":false,"should_loop":false,"share_notes":false,"slide_number":true,"slide_count":20,"rtl":false,"version":2,"collaborative":false,"deck_user_editor_limit":1,"data_updated_at":1537509394986,"font_typekit":null,"font_google":null,"notes":{"66f989b175555810072c8d5625c1b092":"Managing People isn't about words... it's about Goals.","c9d4cebb86c3ea5866ec75aeb3059b5c":"So in order to highlight your thought leadership, there are tools that WordPress offers for you, and tools outside your website that you should leverage as well.\n\n{bullet points}\n\nUsing tools like this enables you to have more direct impact on your audience through your content. Your insights and expertise can have more impact when you leverage the tools made available to you","df4f370ff7acc1db62e3992cbf9ece49":"WordPress is really good at managing users. User accounts can sound like a really boring part of WordPress, but this is really important for organizations that depend heavily on volunteers or donors.\n\nConsider \n* Registration for events\n* Donors and donor management\n* Providing content that you only want your staff, board, or donors to see.\n\nAll of these things are heavily dependent on WordPress' ability to manage users."}}};
+
+
+			// Use local fonts
+			SLConfig.fonts_url = 'lib/fonts/';
+		</script>
+
+		<script src="lib/head.min.js"></script>
+		<script src="lib/reveal.min.js"></script>
+		<script src="lib/offline.js"></script>
+
+		<!-- Initialize the presentation -->
+		<script>
+			Reveal.initialize({
+				width: 1280,
+				height: 720,
+				margin: 0.05,
+
+				controls: true,
+				progress: true,
+				history: true,
+				mouseWheel: false,
+				showNotes: false,
+				slideNumber: true,
+
+				autoSlide: 0 || 0,
+				autoSlideStoppable: true,
+
+				center: false,
+				shuffle: false,
+				loop: false,
+				rtl: false,
+
+				transition: "fade",
+				backgroundTransition: "none",
+
+				dependencies: [
+					{ src: 'lib/reveal-plugins/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'lib/reveal-plugins/highlight/highlight.js', async: true, callback: function() { hljs.initHighlighting(); hljs.initHighlightingOnLoad(); } },
+					{ src: 'lib/reveal-plugins/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'lib/reveal-plugins/zoom/zoom.js', async: true }
+				]
+			});
+		</script>
+
+		
+
+	</body>
+</html>
